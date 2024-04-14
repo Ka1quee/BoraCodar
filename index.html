@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Bora codar?</title>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="container-header">
+            <h1 class="titulo">Ativades de Lógica - Java Script</h1>
+        </div>
+    </header>
+
+    <main class="conteudo">
+
+        <!-- 1 -->
+
+        <section class="maior-numero">
+            <h1>1. Escreva um programa em que o usuário informe dois números utilizando o "prompt". Então escreva em tela o
+                maior deles.</h1>
+            <form action="" class="formulario">
+                <div class="input-group">
+                    <div class="input-item">
+                        <label for="num1">Primeiro número</label>
+                        <input type="number" id="num1" placeholder="Digite o primeiro numero">
+                    </div>
+
+                    <div class="input-item">
+                        <label for="num2">Segundo numero número</label>
+                        <input type="number" id="num2" placeholder="Digite o segundo numero">
+                    </div>
+                </div>
+
+                <button class="btn" id="btn1" onclick="numeroMaior()">Verificar</button>
+            </form>
+
+            <div class="resultado">
+                <h4>Resultado:</h4>
+                <span id="resultado1"></span>
+            </div>
+        </section>
+
+        <!-- 2 -->
+
+        <section class="negativo-positivo">
+            <h1>2. Faça um programa que leia um valor informado pelo usuário e diga se o valor informado é positivo,
+                negativo ou zero.</h1>
+            <form action="" class="formulario">
+                <div class="input-group">
+                    <div class="input-item">
+                        <label for="num3">Número</label>
+                        <input type="number" id="num3" placeholder="Digite o número">
+                    </div>
+                </div>
+
+                <button class="btn" id="btn2" onclick="positivoNegativo()">Verificar</button>
+            </form>
+
+            <div class="resultado">
+                <h4>Resultado:</h4>
+                <span id="resultado2"></span>
+            </div>
+        </section>
+
+        <!-- 3 -->
+
+        <section class="maior-numero">
+            <h1>3. Faça um algoritmo para ler 3 valores (considere que não serão informados valores iguais) e escrever o
+                maior deles.</h1>
+            <form action="" class="formulario">
+                <div class="input-group">
+                    <div class="input-item">
+                        <label for="num4">Primeiro número</label>
+                        <input type="number" id="3num1" placeholder="Digite o primeiro numero">
+                    </div>
+
+                    <div class="input-item">
+                        <label for="num5">Segundo numero número</label>
+                        <input type="number" id="3num2" placeholder="Digite o segundo numero">
+                    </div>
+
+                    <div class="input-item">
+                        <label for="num6">Terceiro numero número</label>
+                        <input type="number" id="3num3" placeholder="Digite o segundo numero">
+                    </div>
+                </div>
+
+                <button class="btn" id="btn3" onclick="numeroMaiorTres()">Verificar</button>
+            </form>
+
+            <div class="resultado">
+                <h4>Resultado:</h4>
+                <span id="resultado3"></span>
+            </div>
+        </section>
+
+        <!-- 4 -->
+
+        <section class="maior-numero">
+            <h1>4. Faça um programa que leia dois valores informados pelo usuário e exiba uma das três mensagens a
+                seguir: ‘Números iguais’, caso os números sejam iguais ‘Primeiro é maior’, caso o primeiro seja maior
+                que o segundo; ‘Segundo maior’, caso o segundo seja maior que o primeiro.</h1>
+            <form action="" class="formulario">
+                <div class="input-group">
+                    <div class="input-item">
+                        <label for="num4">Primeiro número</label>
+                        <input type="number" id="4num1" placeholder="Digite o primeiro numero">
+                    </div>
+
+                    <div class="input-item">
+                        <label for="num5">Segundo numero número</label>
+                        <input type="number" id="4num2" placeholder="Digite o segundo numero">
+                    </div>
+
+                </div>
+
+                <button class="btn" id="btn4" onclick="maiorIgual()">Verificar</button>
+            </form>
+
+            <div class="resultado">
+                <h4>Resultado:</h4>
+                <span id="resultado4"></span>
+            </div>
+        </section>
+
+        <!-- 5 -->
+
+        <section class="maior-numero">
+            <h1>5. Faça um programa que leia 10 valores informados pelo usuário, calcule, exiba os números informados e
+                escreva a média aritmética desses valores lidos.</h1>
+            <form action="" class="formulario">
+
+
+
+
+                <button class="btn" id="btn5" onclick="lerDezNumeros()">Iniciar</button>
+            </form>
+
+        </section>
+
+        <!-- 6 -->
+
+        <section class="maior-numero">
+            <h1>6. Faça um programa que leia 10 números informados pelo usuário e ao final da leitura escrever a soma
+                total dos 10 números lidos.</h1>
+            <form action="" class="formulario">
+
+
+                <button class="btn" id="btn5" onclick="somaDezNumeros()">Iniciar</button>
+            </form>
+
+        </section>
+
+        <!-- 7 -->
+
+        <section class="maior-numero">
+            <h1>7. Faça um programa que leia 6 números que o usuário vai informar. Todos os números lidos com valor
+                inferior a 72 devem ser somados. Escreva o valor final da soma efetuada e também todos valores que o
+                usuário informou. </h1>
+            <form action="" class="formulario">
+
+
+                <button class="btn" id="btn6" onclick="lerSeisNumeros()">Iniciar</button>
+            </form>
+            <div class="resultado">
+                <h4>Resultado:</h4>
+                <span id="resultado-numeros"></span>
+            </div>
+        </section>
+
+        <!-- 8 -->
+
+        <section class="maior-numero">
+            <h1>8. Escreva um programa que calcule a média de quatro números informados pelo usuário, mas somente se
+                esses números forem maiores que 0 e menores que 10. No final, se a média for maior que cinco o usuário
+                receberá uma mensagem "Você passou no teste". Em qualquer outra situação, ele receberá uma mensagem de
+                "tente novamente"</h1>
+            <form action="" class="formulario">
+
+
+
+
+                <button class="btn" id="btn7" onclick="calculaMedia()">Iniciar</button>
+            </form>
+
+            <div class="resultado">
+                <h4>Resultado:</h4>
+                <span id="resultado7"></span>
+            </div>
+
+        </section>
+
+        <!-- 9 -->
+
+        <section class="maior-numero">
+            <h1>9. Escreva um programa para ler o ano de nascimento de uma pessoa e escrever uma mensagem que diga se
+                ela
+                poderá ou não votar este ano (não é necessário considerar o mês em que ela nasceu).</h1>
+            <form action="" class="formulario">
+                <div class="input-group">
+                    <div class="input-item">
+                        <label for="num4">Data de nascimento</label>
+                        <input type="num" id="data" placeholder="Digite seu ano de nascimento">
+                    </div>
+
+                </div>
+                <button class="btn" id="btn8" onclick="votar()">Iniciar</button>
+            </form>
+
+            <div class="resultado">
+                <h4>Resultado:</h4>
+                <span id="resultado8"></span>
+            </div>
+
+        </section>
+
+        <!-- 10 -->
+
+        <section class="maior-numero">
+            <h1>10 - Escreva um programa que verifique a validade de uma senha fornecida pelo usuário. A senha válida é
+                o número "1234" sem aspas. Devem ser impressas as seguintes mensagens: "ACESSO PERMITIDO" caso a senha
+                seja válida. "ACESSO NEGADO" caso a senha seja inválida.</h1>
+            <form action="" class="formulario">
+                <div class="input-group">
+                    <div class="input-item">
+                        <label for="">Senha</label>
+                        <input type="password" id="senha" placeholder="Digite sua senha">
+                    </div>
+
+                </div>
+                <button class="btn" id="btn8" onclick="validaSenha()">Iniciar</button>
+            </form>
+
+            <div class="resultado">
+                <h4>Resultado:</h4>
+                <span id="resultado9"></span>
+            </div>
+
+        </section>
+
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
